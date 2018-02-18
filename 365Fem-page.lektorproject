@@ -1,5 +1,7 @@
 [project]
 name = 365Fem-page
+url_style = relative
+url = https://valentina2095.github.io/DataFem365/
 
 [servers.ghpages]
 target = ghpages+https://valentina2095/DataFem365
