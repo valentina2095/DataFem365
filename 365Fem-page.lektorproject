@@ -2,4 +2,4 @@
 name = 365Fem-page
 
 [servers.ghpages]
-target = ghpages://valentina2095/DataFem365
+target = ghpages.https://valentina2095/DataFem365
