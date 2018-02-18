@@ -1,0 +1,15 @@
+language: python
+
+python: 2.7
+
+install:
+  # Lektor build dependencies
+  - pip install lektor
+
+script:
+  - "lektor build --no-prune"
+
+deploy:
+  provider: script
+  script: "lektor deploy ghpages-https"
+  on: branch: gh-pages
