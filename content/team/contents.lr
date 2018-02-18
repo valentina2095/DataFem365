@@ -1,3 +1,5 @@
 _model: page
 ---
 title: Team
+---
+_template: members.html

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h1>{{ this.title }}</h1>
+  {% set members = site.query('/team')%}
+  <!-- {{ members }} -->
+
+  <ul>
+  {% for member in members %}
+  <li><a href="{{ member|url }}">{{ member.name }} {{ member.last_name}}</a></li>
+  {% endfor %}
+  </ul>
+
+  {{ this.body }}
+{% endblock %}

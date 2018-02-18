@@ -5,3 +5,9 @@ name: Valentina
 email: vsanche1@eafit.edu.co
 ---
 last_name: Sánchez
+---
+dob: 1995-09-20
+---
+image: cute-black-cat-wallpaper.jpg
+---
+_template: team-member.html

@@ -1,0 +1,11 @@
+{% macro age(dob) %}
+<!-- Los métodos de los objetos de python se heredan a los tipos -->
+<!-- {{ dob.today().year - dob.year }} -->
+{% set age = (dob.today().year - dob.year) %}
+{{ age }}
+{% if age > 18 %}
+years old.
+{% else %}
+, very young!
+{% endif %}
+{% endmacro %}

@@ -1,6 +1,13 @@
+{% from 'macros/utils.html' import age %}
+
 {% extends "layout.html" %}
 {% block title %}{{ this.name }} {{this.last_name }}{% endblock %}
 {% block body %}
   <h2>{{ this.name }} {{ this.last_name }}</h2>
-  {{ this.email }}
+  {{ this.email }}, {{ age(this.dob)}}
+
+<!-- This conditional checks if there is an image to show -->
+  {% if this.image %}
+  <img src="{{ this|url }}{{ this.image}}" alt="Photo" width="200px">
+  {% endif %}
 {% endblock %}
