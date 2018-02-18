@@ -12,4 +12,5 @@ script:
 deploy:
   provider: script
   script: "lektor deploy ghpages-https"
-  on: branch: gh-pages
+    on:
+      branch: gh-pages
