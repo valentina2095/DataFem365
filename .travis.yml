@@ -11,6 +11,6 @@ script:
 
 deploy:
   provider: script
-  script: "lektor deploy ghpages-https"
+  script: "lektor deploy --username $GITHUB_USER --password $GITHUB_PASS"
     on:
       branch: gh-pages
